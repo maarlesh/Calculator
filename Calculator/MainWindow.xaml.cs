@@ -76,11 +76,7 @@ namespace Calculator
 
         private void DecimalButton_Click(object sender, RoutedEventArgs e)
         {
-            if (resultLabel.Content.ToString().Contains("."))
-            {
-
-            }
-            else
+            if (!resultLabel.Content.ToString().Contains("."))
             {
                 resultLabel.Content += ".";
             }
